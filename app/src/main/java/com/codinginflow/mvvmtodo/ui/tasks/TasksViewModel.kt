@@ -79,7 +79,6 @@ class TasksViewModel @Inject constructor(
         }
     }
 
-
     private fun showTaskSavedConfirmationMessage(text: String) = viewModelScope.launch {
         tasksEventChannel.send(TasksEvent.ShowTaskSavedConfirmationMessage(text))
     }
