@@ -38,8 +38,8 @@ class AddEditTaskFragment : Fragment(R.layout.fragment_add_edit_task){
                 viewModel.taskName = it.toString()
             }
 
-            checkBoxImportant.setOnCheckedChangeListener{_,ischecked->
-                viewModel.taskImportance = ischecked
+            checkBoxImportant.setOnCheckedChangeListener{ _, isChecked ->
+                viewModel.taskImportance = isChecked
             }
 
             fabSaveTask.setOnClickListener{
