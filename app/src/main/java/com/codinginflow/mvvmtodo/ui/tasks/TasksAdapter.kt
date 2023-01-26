@@ -42,4 +42,5 @@ class TasksAdapter : ListAdapter<Task, TasksAdapter.TasksViewHolder>(DiffCallbac
             return oldItem == newItem
         }
     }
+
 }
